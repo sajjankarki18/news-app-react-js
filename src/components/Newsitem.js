@@ -60,8 +60,8 @@ export class Newsitem extends Component {
        </div>
         <div className="row">
         {!this.state.Loading && this.state.articles.map((element) => {
-           return <div className="col-md-3">
-              <News mode={mode} title= {element.title?element.title.slice(0.35):""} description={element.description?element.description.slice(0,120):""} imageUrl= {element.urlToImage} newsUrl= {element.url}/>
+           return <div className="col-md-4">
+              <News mode={mode} title= {element.title?element.title.slice(0.20):""} description={element.description?element.description.slice(0,80):""} imageUrl= {element.urlToImage} newsUrl= {element.url} author={element.author} date={element.publishedAt}/>
             </div>
         })} 
         </div>
