@@ -33,13 +33,13 @@ export class App extends Component {
       <BrowserRouter>
         <Navbar handleClick= {this.darkMode} mode={mode} text={text}/>
         <Routes>
-          <Route path='/' element={<Newsitem mode={mode} key='general' pageSize={8} category = 'general'/>}></Route>
-          <Route path='/business' element={<Newsitem mode={mode} key='business' pageSize={8} category = 'business'/>}></Route>
-          <Route path='/entertainment' element={<Newsitem mode={mode} key='entertainment' pageSize={8} category = 'entertainment'/>}></Route>
-          <Route path='/health' element={<Newsitem mode={mode} key='health' pageSize={8} category = 'health'/>}></Route>
-          <Route path='/science' element={<Newsitem mode={mode} key='science' pageSize={8} category = 'science'/>}></Route>
-          <Route path='/sports' element={<Newsitem mode={mode} key='sports' pageSize={8} category = 'sports'/>}></Route>
-          <Route path='/technology' element={<Newsitem mode={mode} key='technology' pageSize={8} category = 'technology'/>}></Route>
+          <Route path='/' element={<Newsitem mode={mode} key='general' pageSize={9} category = 'general'/>}></Route>
+          <Route path='/business' element={<Newsitem mode={mode} key='business' pageSize={9} category = 'business'/>}></Route>
+          <Route path='/entertainment' element={<Newsitem mode={mode} key='entertainment' pageSize={9} category = 'entertainment'/>}></Route>
+          <Route path='/health' element={<Newsitem mode={mode} key='health' pageSize={9} category = 'health'/>}></Route>
+          <Route path='/science' element={<Newsitem mode={mode} key='science' pageSize={9} category = 'science'/>}></Route>
+          <Route path='/sports' element={<Newsitem mode={mode} key='sports' pageSize={9} category = 'sports'/>}></Route>
+          <Route path='/technology' element={<Newsitem mode={mode} key='technology' pageSize={9} category = 'technology'/>}></Route>
         </Routes>
       </BrowserRouter>
     </>
